@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/browndust-card/static/css/main.53e58206.css",
+    "main.js": "/browndust-card/static/js/main.235d8c8a.js",
+    "static/js/453.9fe5f95b.chunk.js": "/browndust-card/static/js/453.9fe5f95b.chunk.js",
+    "index.html": "/browndust-card/index.html",
+    "main.53e58206.css.map": "/browndust-card/static/css/main.53e58206.css.map",
+    "main.235d8c8a.js.map": "/browndust-card/static/js/main.235d8c8a.js.map",
+    "453.9fe5f95b.chunk.js.map": "/browndust-card/static/js/453.9fe5f95b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53e58206.css",
+    "static/js/main.235d8c8a.js"
+  ]
+}
