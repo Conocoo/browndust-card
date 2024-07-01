@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import './CardDetail.css';
 
+const fillEmptyValues = (values) => {
+  let lastValue = '';
+  return values.map((value) => {
+    if (value === '') {
+      return lastValue;
+    }
+    lastValue = value;
+    return value;
+  });
+};
+
 function CardDetail({ card }) {
   const [level, setLevel] = useState(1);
 
@@ -14,6 +25,22 @@ function CardDetail({ card }) {
     if (level > 1) {
       setLevel(level - 1);
     }
+  };
+
+  const renderActivationTiming = () => {
+    const filledTimings = fillEmptyValues(card.activationTiming);
+    const timings = filledTimings[level - 1].split(',');
+    return timings.map((timing, index) => (
+      <p key={index}>{timing}턴 시작 전</p>
+    ));
+  };
+
+  const renderActivationTarget = () => {
+    const filledTargets = fillEmptyValues(card.activationTarget);
+    const targets = filledTargets[level - 1].split(',').filter(target => target !== '');
+    return targets.map((target, index) => (
+      <p key={index}>{target}</p>
+    ));
   };
 
   return (
@@ -30,11 +57,14 @@ function CardDetail({ card }) {
         </div>
         <div className="card-description">
           <div className="description-top">
-            <h2>{card.name}</h2>
+            <img src={`${process.env.PUBLIC_URL}/img/etc/spell_tjfaud.png`} alt="Activation Icon" className="activation-icon" />
+            <h3 className="title">선택 가능한 발동 시점</h3>
+            {renderActivationTiming()}
           </div>
           <div className="description-middle">
-            <p>선택 가능한 발동 시점: {card.activationTiming}</p>
-            <p>선택 가능한 발동 대상: {card.activationTarget}</p>
+            <img src={`${process.env.PUBLIC_URL}/img/etc/spell_tjfaud.png`} alt="Activation Icon" className="activation-icon" />
+            <h3 className="title">선택 가능한 발동 대상:</h3>
+            {renderActivationTarget()}
           </div>
           <div className="description-bottom">
             <p>방어력이 감소됩니다.</p>

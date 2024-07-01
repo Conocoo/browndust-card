@@ -1,18 +1,12 @@
 .card {
-  /* width: 120px; */
-  height: 120px;
+  width: 90px;
+  height: 90px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  
 }
 
-.card.selected {
-  background-color: #141d23; /* 선택된 카드 배경색 */
-  border-color: #141d23; /* 선택된 카드 테두리 색 */
-
-}
 
 .card-image-container {
   width: 100%;

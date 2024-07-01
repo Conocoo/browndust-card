@@ -3,10 +3,13 @@
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   justify-content: center;
-  background-color: #141d23; 
-
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-detail {
   margin-top: 20px;
 }
+

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding: 0 100px; /* 좌우에 100px 패딩 추가 */
-  background-color: #141d23; /* 배경색 추가 */
   border-radius: 10px; /* 둥근 모서리 추가 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
   overflow: hidden;
@@ -15,7 +14,7 @@
 
 .card-image-full {
   flex: 1;
-  background-color: #ffffff; /* 이미지 배경색 */
+  background-color: #000; /* 이미지 배경색 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,10 +29,10 @@
 
 .card-name-overlay {
   position: absolute;
-  bottom: 10%; /* 이미지 아래쪽에 위치 */
+  bottom: 90%; /* 이미지 아래쪽에 위치 */
   text-align: center;
   width: 100%;
-  color: #000000; /* 텍스트 색상 */
+  color: #fff; /* 텍스트 색상 */
   font-size: 150%; /* 텍스트 크기 */
   font-weight: bold; /* 텍스트 굵기 */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 */
@@ -82,8 +81,23 @@
   border-bottom: 1px solid #333; /* 구분선을 추가 */
 }
 
-.description-top {
+.description-top,
+.description-middle{
   border-top: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.description-top p,
+.description-middle p {
+  margin: 2px 0; /* 각 줄 사이에 여백 추가 */
+}
+.description-top .title ,
+.description-middle .title {
+  font-weight: bold;
+  color: #FFD700; /* 연노랑색 */
+  margin: 0;
 }
 
 .description-bottom {
@@ -96,4 +110,10 @@
 
 .card-description p {
   margin-top: 5px;
+}
+
+.activation-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }

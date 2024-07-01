@@ -1,12 +1,10 @@
 .battlebookpage {
   padding: 20px;
-  background-color: #141d23; 
   color: #ffffff; 
 }
 
 .battlebookpage .header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .battlebookpage .header-image {
