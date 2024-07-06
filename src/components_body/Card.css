@@ -1,23 +1,27 @@
 .card {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
 }
 
-
 .card-image-container {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지를 컨테이너에 맞추기 */
+  display: block;
+  object-fit: cover;
 }
 
 .card-text-overlay {
@@ -25,9 +29,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* 반투명 배경색 */
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   text-align: center;
-  padding: 5px 0; /* 텍스트 패딩 조정 */
+  padding: 5px 0;
   box-sizing: border-box;
 }
