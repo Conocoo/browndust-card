@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/browndust-card/static/css/main.f7243f31.css",
-    "main.js": "/browndust-card/static/js/main.42949148.js",
+    "main.css": "/browndust-card/static/css/main.b25babab.css",
+    "main.js": "/browndust-card/static/js/main.e8a67e7b.js",
     "static/js/453.9fe5f95b.chunk.js": "/browndust-card/static/js/453.9fe5f95b.chunk.js",
     "index.html": "/browndust-card/index.html",
-    "main.f7243f31.css.map": "/browndust-card/static/css/main.f7243f31.css.map",
-    "main.42949148.js.map": "/browndust-card/static/js/main.42949148.js.map",
+    "main.b25babab.css.map": "/browndust-card/static/css/main.b25babab.css.map",
+    "main.e8a67e7b.js.map": "/browndust-card/static/js/main.e8a67e7b.js.map",
     "453.9fe5f95b.chunk.js.map": "/browndust-card/static/js/453.9fe5f95b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7243f31.css",
-    "static/js/main.42949148.js"
+    "static/css/main.b25babab.css",
+    "static/js/main.e8a67e7b.js"
   ]
 }
