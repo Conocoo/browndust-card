@@ -6,7 +6,7 @@ function CardDetail({ card }) {
   const renderActivationTiming = () => {
     return card.activationTiming
       .split('\n')
-      .map((line, index) => <p key={index}>{line}</p>);
+      .map((line, index) => <p key={index}>{line} 턴 시작 전</p>);
   };
 
   const renderActivationTarget = () => {
@@ -34,24 +34,14 @@ function CardDetail({ card }) {
             }
             alt={card.name}
           />
-          <div className="card-name-overlay">{card.name}</div>{' '}
+          <div className="card-name-overlay">{card.name}</div>
         </div>
         <div className="card-description">
           <div className="description-top">
-            <img
-              src={`${process.env.PUBLIC_URL}/img/etc/spell_tjfaud.png`}
-              alt="Activation Icon"
-              className="activation-icon"
-            />
             <h3 className="title">선택 가능한 발동 시점</h3>
             {renderActivationTiming()}
           </div>
           <div className="description-middle">
-            <img
-              src={`${process.env.PUBLIC_URL}/img/etc/spell_tjfaud.png`}
-              alt="Activation Icon"
-              className="activation-icon"
-            />
             <h3 className="title">선택 가능한 발동 대상:</h3>
             {renderActivationTarget()}
           </div>

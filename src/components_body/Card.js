@@ -11,9 +11,6 @@ function Card({ card, isSelected, onSelect }) {
           alt={card.name}
           class="overlay-image"
         />
-        {/* <div className="card-text-overlay">
-          <p>{card.name}</p>
-        </div> */}
       </div>
     </div>
   );

@@ -1,34 +1,38 @@
 .card-detail-container {
   display: flex;
   justify-content: center;
-  padding: 0 100px; /* 좌우에 100px 패딩 추가 */
+  max-width: 835px;
+  width: 100%;
   border-radius: 10px; /* 둥근 모서리 추가 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-detail {
   display: flex;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .card-image-full {
-  flex: 1;
+  flex: 6;
   background-color: #000; /* 이미지 배경색 */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .card-image-full img {
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
+  width: 100%; /* 이미지의 크기를 조정합니다 */
 }
 
 .card-name-overlay {
-  position: absolute;
+  /* position: absolute; */
   bottom: 90%; /* 이미지 아래쪽에 위치 */
   text-align: center;
   width: 100%;
@@ -46,8 +50,7 @@
   margin-top: 10px;
 }
 
-
-.card-level-control button, 
+.card-level-control button,
 .card-level-control span {
   background-color: #333;
   color: #fff;
@@ -67,26 +70,33 @@
 }
 
 .card-description {
-  flex: 1;
+  flex: 7;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffff; /* 설명 배경색 */
+  background-color: #282c34;
+  color: #ffffff;
 }
 
 .description-top,
 .description-middle,
 .description-bottom {
-  flex: 1; /* 높이를 동일하게 설정 */
   padding: 10px;
   border-bottom: 1px solid #333; /* 구분선을 추가 */
 }
-
+.description-top {
+  flex: 2;
+}
+.description-middle {
+  flex: 1;
+}
+.description-bottom {
+  flex: 3;
+}
 .description-top,
-.description-middle{
+.description-middle {
   border-top: none;
-  display: flex;
   flex-direction: column;
   align-items: left;
 }
@@ -95,10 +105,10 @@
 .description-middle p {
   margin: 2px 0; /* 각 줄 사이에 여백 추가 */
 }
-.description-top .title ,
+.description-top .title,
 .description-middle .title {
   font-weight: bold;
-  color: #FFD700; /* 연노랑색 */
+  color: #ffd700; /* 연노랑색 */
   margin: 0;
 }
 
