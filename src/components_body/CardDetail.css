@@ -10,30 +10,34 @@
   margin-right: auto;
 }
 
-.card-detail {
-  display: flex;
-  width: 100%;
-}
-
 .card-image-full {
   flex: 6;
-  background-color: #000; /* 이미지 배경색 */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  height: 500px;
   flex-direction: column;
 }
 
 .card-image-full img {
-  max-width: 100%;
-  height: auto;
-  width: 100%; /* 이미지의 크기를 조정합니다 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* 클릭 등의 이벤트를 무시하게 함 */
 }
 
 .card-name-overlay {
-  /* position: absolute; */
-  bottom: 90%; /* 이미지 아래쪽에 위치 */
+  position: absolute;
+  top: 91%;
   text-align: center;
   width: 100%;
   color: #fff; /* 텍스트 색상 */
@@ -42,41 +46,15 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 */
 }
 
-.card-level-control {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.card-level-control button,
-.card-level-control span {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin: 0 5px;
-  cursor: pointer;
-  height: 30px;
-  font-size: 16px;
-  flex: 1; /* 버튼과 숫자를 이미지의 너비에 맞추기 위해 확장 */
-  text-align: center; /* 숫자를 가운데 정렬 */
-}
-
-.card-level-control button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
 .card-description {
   flex: 7;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(40, 44, 52, 0.7);
   color: #ffffff;
+  border-radius: 20px;
 }
 
 .description-top,
