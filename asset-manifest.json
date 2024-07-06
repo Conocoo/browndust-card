@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/browndust-card/static/css/main.674f2a06.css",
-    "main.js": "/browndust-card/static/js/main.e8a67e7b.js",
+    "main.css": "/browndust-card/static/css/main.a185172c.css",
+    "main.js": "/browndust-card/static/js/main.feba6b66.js",
     "static/js/453.9fe5f95b.chunk.js": "/browndust-card/static/js/453.9fe5f95b.chunk.js",
     "static/media/main.png": "/browndust-card/static/media/main.40498cb0978b32e99506.png",
     "index.html": "/browndust-card/index.html",
-    "main.674f2a06.css.map": "/browndust-card/static/css/main.674f2a06.css.map",
-    "main.e8a67e7b.js.map": "/browndust-card/static/js/main.e8a67e7b.js.map",
+    "main.a185172c.css.map": "/browndust-card/static/css/main.a185172c.css.map",
+    "main.feba6b66.js.map": "/browndust-card/static/js/main.feba6b66.js.map",
     "453.9fe5f95b.chunk.js.map": "/browndust-card/static/js/453.9fe5f95b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.674f2a06.css",
-    "static/js/main.e8a67e7b.js"
+    "static/css/main.a185172c.css",
+    "static/js/main.feba6b66.js"
   ]
 }
