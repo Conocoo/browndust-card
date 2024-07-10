@@ -6,9 +6,9 @@
 
 ## Screenshots
 
-![alt text](https://raw.githubusercontent.com/Conocoo/browndust-card/master/ReadMe\img\info_1.JPG)
+![alt text](https://raw.githubusercontent.com/Conocoo/browndust-card/master/ReadMe/img/info_1.JPG)
 
-![alt text](https://raw.githubusercontent.com/Conocoo/browndust-card/master/ReadMe\img\info_2.JPG)
+![alt text](https://raw.githubusercontent.com/Conocoo/browndust-card/master/ReadMe/img/info_2.JPG)
 
 ## 설치 방법
 
